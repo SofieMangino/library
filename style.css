@@ -8,7 +8,24 @@ nav {
   justify-content: space-between;
   color: #CC5500;
 }
-
+.buttons, .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .title {
   color: red;
+}
+.p-first{
+  font-family: 'Mr Dafoe';
+  margin: 0;
+  font-size: 5.5em;
+  margin-top: -0.6em;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+  transform: rotate(-7deg);
+}
+.class .text {
+  $main: #7d41e6;
+ $glow: rgba(#2e26ff, 0.4);
 }
