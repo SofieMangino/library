@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
 body {
   background-color: #FFF;
 }
+section {
+    margin: 4em auto;
+}
 nav {
+  margin: 4em auto;
   background: #333;
   padding: 1em 2em;
   display: flex;
@@ -16,16 +22,108 @@ nav {
 .title {
   color: red;
 }
+.first {
+  width: 50%;
+}
 .p-first{
   font-family: 'Mr Dafoe';
   margin: 0;
-  font-size: 5.5em;
-  margin-top: -0.6em;
+  font-size: 1.5em;
+  margin-top: 1em;
   color: white;
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
-  transform: rotate(-7deg);
 }
 .class .text {
   $main: #7d41e6;
  $glow: rgba(#2e26ff, 0.4);
+}
+
+.p-second{
+  color: #484848
+  margin: 0;
+  font-size: 25px;
+  marign-top: 1em;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px
+  cursor: pointer;
+}
+.p-second span{
+  transition: .5s linear
+}
+.p-second:hover span:nth-child(1){
+  margin-right: 5px;
+}
+.p-second:hover span:nth-child(1):after {
+  content: "'";
+}
+.p-second:hover span:nth-child(2){
+  margin-left: 30px;
+}
+.p-second:hover span{
+  color: #ff748c;
+  text-shadow: 0 0 10px #FFF
+               0 0 20px #FFF
+               0 0 40px #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+.p-third {
+  font-weight: 5;
+  text-align: center;
+  font-size: 20px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: .5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+.p-fourth {
+  height: .02vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 10ch;
+  animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
