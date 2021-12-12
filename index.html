@@ -8,32 +8,36 @@
 <body>
 <section class="navs">
   <nav>
-     <div class="title">
-       Library
+     <div class="logo">
+       <img src="https://img.icons8.com/wired/32/000000/huawei-logo.png"/>
      </div>
      <div class="links">
-       <a href="#">Gallery</a>
-       <a href="#">Exhibit</a>
-       <a href="#">Class</a>
+       <a href="#">Item 1</a>
+       <a href="#">Item 2</a>
+       <a href="#">Item 3</a>
      </div>
   </nav>
   <nav>
      <div class="left">
+       <a href="#">Component</a>
        <a href="#">Library</a>
-       <a href="#">Gallery</a>
      </div>
      <div class="logo">
-       <img src="img/goat.jpg" />
+       <img src="https://img.icons8.com/wired/32/000000/huawei-logo.png"/>
      </div>
      <div class="right">
-       <a href="#">Exhibit</a>
-       <a href="#">Class</a>
+       <a href="#">Item 4</a>
+       <a href="#">Item 5</a>
      </div>
   </nav>
 </section>
 <section class="buttons">
-  <button class="first">First</button>
-  <button class="second">Second</button>
+  <button class="first">
+    Fancy button
+    <div class="button_horizontal"></div>
+    <div class="button_vertical"></div>
+  </button>
+  <button class="second">hover me</button>
   <button class="third">Third</button>
   <button class="fourth">Fourth</button>
 </section>
@@ -48,5 +52,25 @@
   </p>
 </section>
 <section class="cards">
+  <article class="card">
+        <div class="card-img">
+          <img id="myImg2" src="img/flamingo.jpg" alt="" style="width:100%;max-width:300px">
+        </div>
+        <div class="card-content">
+          <h3>On the hunt for shrimp</h3>
+          <p>Legend says that flamingos are born white, and start to gain their bright pink color from their strict diet of shrimp.</p>
+          <button data-modal="#04" class="card-more button">View</button>
+        </div><!--end .card-content-->
+      </article>
+      <article class="card">
+       <div class="card-img">
+           <img id="myImg2" src="img/flower.jpg" alt="" style="width:100%;max-width:300px">
+       </div>
+       <div class="card-content">
+         <h3>Blurred Lines</h3>
+         <p>Sometimes it is more important to just focus on what is right in front of us rather than everything that surrounds it.</p>
+         <button data-modal="#12" class="card-more button">View</button>
+       </div><!--end .card-content-->
+     </article><!--end .card-->
   <!-- paste in your card from your media gallery plus the css for it-->
 </section>
